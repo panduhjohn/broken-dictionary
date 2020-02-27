@@ -7,20 +7,13 @@
   </head>
   <body>
     <h1>Add a Word</h1>
-    <form action="/words/addWord" method="POST">
+    <form action="/words/addword" method="POST">
       <label for="word">Word</label><br />
-      <input id="word" name="word" type="text" placeholder="Word" /><br />
+      <input id="word" name="word" type="text" placeholder="word" /><br />
       <label for="definition">Definition</label><br />
 
-      <textarea
-        id="definition"
-        name="definition"
-        type="text"
-        rows="4"
-        cols="50"
-      >
-      </textarea
-      ><br />
+      <textarea id="definition" name="definition" type="text" rows="4" cols="50"></textarea> 
+      <br />
       <button type="submit">Add To Dictionary</button>
     </form>
   </body>

@@ -7,13 +7,16 @@
 </head>
 <body>
     <h1>Find a Word</h1>
-    <form action="/words/foundWord" method="GET">
+    <form action="/words/foundword" method="GET">
       <label for="word">Word</label><br />
-      <input id="word" name="word" type="text" placeholder="Word" /><br />
+      <input id="word" name="word" type="text" placeholder="word" /><br />
       <br />
-      <button type="submit">Add To Dictionary</button>
+      <button type="submit">Find Word</button>
     </form>
 
-    <% if(word!==null){ %><hr /> <h2><%= word.word %>: </h2><p><%= word.definition %> </p><% } %> 
+    <% if (word !== null) { %><hr /> 
+        <h2><%= word.word %>: </h2>
+        <p><%= word.definition %> </p>
+        <% } %> 
 </body>
 </html>
